@@ -15,4 +15,5 @@ echo "Process id: " $proc
 
 jps | grep -v -i jps |  awk {'print $1;'} | xargs -I{} jstat -gccapacity {} 
 
+# ToDo: Add jconsole startup for Java daemon monitoring.
 
